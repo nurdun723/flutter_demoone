@@ -20,10 +20,11 @@ class _BottmNavigationDemoState extends State<BottonNavigationDemo> {
     // TODO: implement build
     return BottomNavigationBar(
       //底部导航栏
-      type: BottomNavigationBarType.fixed,//下部导航的item大于3的情况下，加这个属性fixedColor: Colors.green,
-      currentIndex: _currentIndex,
-      onTap: _onTapHandler,
-      items: [
+      type: BottomNavigationBarType.fixed,//下部导航的item大于3的情况下，加这个属性
+      fixedColor: Colors.green,//激活选项的颜色
+      currentIndex: _currentIndex,//激活选项的下标
+      onTap: _onTapHandler,//点击被选中的选项被调用的方法
+      items: [//底部导航选项
         BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('首页')),
         BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart), title: Text('商城')),
