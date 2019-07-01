@@ -3,6 +3,7 @@ import './components/listView_temp.dart';
 import './components/leftNavigate.dart';
 import './components/BottonNavigationDemo.dart';
 import 'components/BasiceDemo.dart';
+import 'components/layout_demo.dart';
 
 void main() {
   runApp(App());
@@ -61,11 +62,7 @@ class Home extends StatelessWidget {
             children: <Widget>[
               ListViewTemplate(),
               BasiceDemo(),
-              Icon(
-                Icons.account_box,
-                size: 128.0,
-                color: Colors.black12,
-              ),
+              layoutDemo()
             ],
           ),
           drawer: DrawLeftNavigate(),//抽屉边栏
