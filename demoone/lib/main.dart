@@ -4,6 +4,7 @@ import './components/leftNavigate.dart';
 import './components/BottonNavigationDemo.dart';
 import 'components/BasiceDemo.dart';
 import 'components/layout_demo.dart';
+import 'components/view_demo.dart';
 
 void main() {
   runApp(App());
@@ -32,7 +33,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
           backgroundColor: Colors.grey[100],
           appBar: AppBar(
@@ -55,6 +56,7 @@ class Home extends StatelessWidget {
                 Tab(icon: Icon(Icons.account_balance)),
                 Tab(icon: Icon(Icons.account_balance_wallet)),
                 Tab(icon: Icon(Icons.account_box)),
+                Tab(icon: Icon(Icons.view_quilt)),
               ],
             ),
           ),
@@ -62,7 +64,8 @@ class Home extends StatelessWidget {
             children: <Widget>[
               ListViewTemplate(),
               BasiceDemo(),
-              layoutDemo()
+              layoutDemo(),
+              VeiwDemo()
             ],
           ),
           drawer: DrawLeftNavigate(),//抽屉边栏
