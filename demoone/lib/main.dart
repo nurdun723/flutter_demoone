@@ -5,6 +5,7 @@ import './components/BottonNavigationDemo.dart';
 import 'components/BasiceDemo.dart';
 import 'components/layout_demo.dart';
 import 'components/view_demo.dart';
+import 'components/sliver_demo.dart';
 
 void main() {
   runApp(App());
@@ -64,7 +65,7 @@ class Home extends StatelessWidget {
             children: <Widget>[
               ListViewTemplate(),
               BasiceDemo(),
-              layoutDemo(),
+              SliverDemo(),
               VeiwDemo()
             ],
           ),

@@ -8,8 +8,6 @@ class VeiwDemo extends StatelessWidget {
     return GridViewBuilerDemo();
   }
 }
-
-
 //GridView.extent 和 GridView.count 生成的网格数量是固定的，如果按照数据数量或者按需求来生成的网格布局的话使用GridView.builder来生成
 class GridViewBuilerDemo extends StatelessWidget {
   Widget _gridbuilderitem(BuildContext context ,int index){
